@@ -1,5 +1,5 @@
 // Google Apps Script URL (akan dibuat di Langkah 7)
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz4D7q7ufPB8yfCduBam3OhDAKoJbwKQdxv79E_IfVah6XPP3eGQ4wsJ2FFWEnIpAYCIw/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyYcGNvqhOe4INbeKOpK774uKaPLfgd_N4qMHd7MwV-m-OXPejRneqh4T26lB3VmByOXg/exec';
 
 document.getElementById('formPendaftaran').addEventListener('submit', function(e) {
     e.preventDefault();
