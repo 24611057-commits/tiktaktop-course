@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Tik Tak Top</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/50x50?text=LOGO" alt="Logo Tik Tak Top">
+            <h2>Tik Tak Top</h2>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="layanan.html">Layanan <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#pendaftaran">Pendaftaran Anggota</a>
+                    <a href="#informasi">Informasi Layanan</a>
+                </div>
+            </li>
+            <li><a href="kelas.html">Kelas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Pendaftaran -->
+    <section id="pendaftaran" class="form-section">
+        <h2>Pendaftaran Anggota</h2>
+        <form id="formPendaftaran">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="program">Program Kursus</label>
+                <select id="program" name="program" required>
+                    <option value="">Pilih Program Kursus</option>
+                    <option value="Desain Grafis">Desain Grafis</option>
+                    <option value="Web Programming">Web Programming</option>
+                    <option value="Data Analysis">Data Analysis</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nik">NIK / Nomor Induk Siswa</label>
+                <input type="text" id="nik" name="nik" placeholder="Contoh: 3271XXXXXXXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan Alamat Lengkap" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp">Nomor WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Contoh: 0812XXXXXXX" required>
+            </div>
+            <button type="submit" class="btn">Daftar</button>
+        </form>
+        <div id="responseMessage"></div>
+    </section>
+
+    <!-- Section Informasi Layanan -->
+    <section id="informasi" class="form-section">
+        <h2>Informasi Layanan</h2>
+        <p>Kami menyediakan berbagai layanan kursus komputer dengan pengajar berpengalaman dan materi terupdate.</p>
+        <ul>
+            <li>Kelas Online & Offline</li>
+            <li>Sertifikat Resmi</li>
+            <li>Konsultasi Karir</li>
+            <li>Job Placement Assistance</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Alamat</h4>
+            <p>Jl. Teknologi No. 123, Bandung, Jawa Barat</p>
+        </div>
+        <div class="footer-section">
+            <h4>Kontak</h4>
+            <p>Email: info@tiktaktop.com</p>
+            <p>Telp: 022-123456</p>
+        </div>
+        <div class="footer-section">
+            <h4>Sosial Media</h4>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
